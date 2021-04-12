@@ -42,7 +42,7 @@ def send_mail(fid,otp,email):
 
     msg = EmailMessage()
     server = smtplib.SMTP_SSL(host='smtp.gmail.com', port=465)
-    server.login("ontariovaccine@gmail.com","Passwordis12345")
+    server.login("","")
     message="""
     Thank you for booking your vaccine with {},
 
