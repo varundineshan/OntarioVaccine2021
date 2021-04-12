@@ -1,2 +1,3 @@
 # OntarioVaccine2021
-Flask Application To Book Covid19 Vaccine 
+
+### Flask application to book covid vaccine online and receive one time OTP via email.
