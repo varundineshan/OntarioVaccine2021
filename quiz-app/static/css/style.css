@@ -1,0 +1,48 @@
+
+.bg-nav{
+    background: #000428;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+/* Split the screen in half */
+.split {
+    height: 100%;
+    width: 37%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  /* Control the left side */
+  .left {
+    left: 0;
+    background-color: linear-gradient(to left, #004e92, #000428);
+  }
+  
+  /* Control the right side */
+  .right {
+    right: 0;
+    background-color:linear-gradient(to left, #004e92, #000428);
+  }
+  
+  /* If you want the content centered horizontally and vertically */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .mt-12{
+    margin-top: 12%;
+  }
+  .mt-2{
+    margin-top:2px;
+  }
+  #shadowred{
+    box-shadow: 5px 10px 18px red;
+  }

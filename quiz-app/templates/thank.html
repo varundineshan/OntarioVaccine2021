@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- 
+<h1>Thank you for booking vaccine , Please find your six digit OTP to show at the hospital</h1>
+<h1>{{otp}}</h1>    -->
+
+<form method="POST" action="/logout">
+<div class="container mt-5">
+   
+
+    <div class="row">
+      <div class="col-md-12">
+        <!-- Card Regular -->
+        <div class="card card-cascade">
+
+          <!-- Card content -->
+          <div class="card-body card-body-cascade ">
+
+            <!-- Title -->
+            <h4 class="card-title"><strong>Thank you for booking vaccine</strong></h4>
+            <hr>
+            <!-- Subtitle -->
+            
+            <p class="font-weight-normal">Please find your six digit OTP to show at the hospital</p>
+            <!-- Text -->
+          
+          <hr>
+          
+          <h1 class="display-1"> {{otp}}</h1>
+         <h4>Booking details are mailed to your email address {{email}}</h4>  
+         <p>Click here to download the booking details</p>    
+    </div>
+          <hr>
+
+    <div class="mx-auto" style="width: 200px;">
+    <input value="Log Out" type="submit" class="btn btn-outline-primary waves-effect float-right mr-3 mb-3">
+    </div>
+         
+        </div>
+      </div>
+    </div>
+      
+  </div>
+</div>
+</form>
+
+
+
+{% endblock %}

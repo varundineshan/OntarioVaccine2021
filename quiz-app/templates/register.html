@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="split right">
+<div class="card mt-12"  style="height:30rem;margin-right: 20%;box-shadow: 5px 10px 18px 5px rgba(10, 10, 10, 0.671);">
+    <div class="card-body " >
+    <form method="POST" action="/register" class="centered"> 
+        
+        <h2 class="card-title">Register</h2><br>
+        <label>User ID</label><br>
+        <input class="form-control" type="email" name="userID" placeholder="Your User ID" autofocus="" required><br>
+           
+        <label>Password</label><br>
+        <input class="form-control" type="password" name="password" placeholder="Your Password" required><br>
+       
+        <label>Confirm Password</label><br>
+        <input class="form-control" type="password" name="cpassword" placeholder="Confirm Password" required><br>
+
+       <input type="submit" class="btn btn-primary btn-block btn-lg" value="Register">
+        <!-- <button class="button is-block is-info is-large is-fullwidth">Login</button> -->
+        <p class="mt-2">Already registered?<a href="/"> Log In</a></p>
+    </form>
+    
+</div>
+</div>
+{% endblock %}

@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block content %}  
+
+    <form method="POST" action="/thank">
+<div class="container mt-5">
+   
+
+    <div class="row">
+      <div class="col-md-12">
+        <!-- Card Regular -->
+        <div class="card card-cascade">
+
+          <!-- Card content -->
+          <div class="card-body card-body-cascade ">
+
+            <!-- Title -->
+            <h4 class="card-title"><strong>Near By Approved Clinics</strong></h4>
+            <hr>
+            <!-- Subtitle -->
+            
+            <p class="font-weight-normal">Book one of these clinic to get vaccine</p>
+           
+          <hr>
+          <div>
+            <table class="table">
+            <tr>
+                <td>Name</td>
+                <td>SERVICE TYPE</td>
+                <td>ADDRESS</td>
+                <td>POSTALCODE</td>
+                <td>DISTANCE(KM)</td>
+                <td>STATUS</td> 
+            </tr>
+            {% for EN_NAME, SERV_TYPE, ADDRESS_1,POSTALCODE,FID,Distance in hospital %}
+            <tr>
+                <td>{{ EN_NAME }}</td>
+                <td>{{ SERV_TYPE }}</td>
+                <td>{{ ADDRESS_1 }}</td>
+                <td>{{ POSTALCODE }}</td>
+                <td>{{ Distance }}</td>
+                <td> <button name="subject" type="submit" value={{FID}}>Book</button></td>
+            </tr>
+            {% endfor %}
+        </table>
+          
+       
+        </div> 
+         
+    </div>
+          <hr>
+
+    <div class="mx-auto" style="width: 200px;">
+    <input value="Logout" name="Logout" type="submit" class="btn btn-outline-primary waves-effect float-right mr-3 mb-3">
+    </div>
+         
+        </div>
+      </div>
+    </div>
+</form>
+
+  
+  </div>
+</div>
+
+{% endblock %}

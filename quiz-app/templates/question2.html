@@ -1,0 +1,75 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<title>Quiz</title> 
+<body>
+<h1>Welcome to the quiz application</h1>    
+
+<form action="/question3" method="POST">  
+<div>
+    <h3>Q2.Are you experiencing any of these symptoms</h3>
+    <input type="checkbox" name="qtwo" value="fever"/>a)Fever and or chills   
+    <input type="checkbox"name="qtwo" value="cough"/>b)Cough or barking cough
+    <input type="checkbox"name="qtwo" value="shortness"/>c)Shortness of breath 
+    <input type="checkbox"name="qtwo" value="throat"/>d)sore throat    
+</div>  
+<input type="submit" value="No">
+</form>
+
+
+</body>
+</html> -->
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<form action="/question3" method="POST">
+<div class="container mt-5">
+   
+
+    <div class="row">
+      <div class="col-md-6">
+        <!-- Card Regular -->
+        <div class="card card-cascade">
+
+          <!-- Card content -->
+          <div class="card-body card-body-cascade ">
+
+            <!-- Title -->
+            <h4 class="card-title"><strong>Question 2/7</strong></h4>
+            <hr>
+            <!-- Subtitle -->
+            
+            <!-- Text -->
+            <p> Are you currently experiencing any of these issues</p>
+          
+          <hr>
+          
+          
+          a)Fever and or chills <br/>
+          b)Cough or barking cough<br/>
+          c)Shortness of breath <br/>
+          d)sore throat    <br/>
+         
+    </div>
+          <hr>
+
+    <div class="mx-auto" style="width: 200px;">
+    <input value="NO" type="submit" class="btn btn-primary waves-effect waves-light ml-3 mb-3 ">
+    <input value="YES" type="submit" name="emerge" class="btn btn-outline-primary waves-effect float-right mr-3 mb-3">
+    </div>
+         
+        </div>
+      </div>
+    </div>
+</form>
+
+  
+  </div>
+</div>
+
+{% endblock %}

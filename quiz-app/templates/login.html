@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+
+{% block content %}
+<div class="split right">
+<div class="card mt-12"  style="height:30rem;margin-right: 20%;box-shadow: 5px 10px 18px 5px rgba(10, 10, 10, 0.671);">
+    <div class="card-body " >
+    <form method="POST" action="/login" class="centered"> 
+        <h2 class="card-title">Login</h2><br>
+        <label>User ID</label><br>
+        <input class="form-control" type="email" name="userID" placeholder="Your User ID" autofocus="" ><br>
+        
+        <label>Password</label><br>
+        <input class="form-control" type="password" name="password" placeholder="Your Password"  data-error="Please enter a valid email."><br>
+        <div class="help-block with-errors"></div>
+        <label>Zip</label><br>
+        <input class="form-control"  type="text" name="zipCode" placeholder="example L5V 2C9" required>
+        <br>
+       <input type="submit" class="btn btn-primary btn-block btn-lg" value="Login">
+        <!-- <button class="button is-block is-info is-large is-fullwidth">Login</button> -->
+        <p class="mt-2">Not registered?<a href="/index2"> Register</a></p>
+        {{message}}
+    </form>
+    
+</div>
+</div>
+
+
+{% endblock %}

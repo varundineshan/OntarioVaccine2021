@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<form action="/logout" method="POST">
+<div class="container mt-5">
+    <div class="row">
+      <div class="col-md-8">
+        <!-- Card Regular -->
+        <div class="card card-cascade">
+          <!-- Card content -->
+          <div class="card-body card-body-cascade ">
+
+            <!-- Title -->
+            <h4 class="card-title"><strong>Please Call 911 Or Get Immediate Medical Help</strong></h4>
+            <hr>
+            Everyone in your household must stay home if anyone has COVID-19 symptoms or is waiting for test results after experiencing symptoms.
+            <br><br>
+            Stay home until the person with symptoms gets a negative COVID-19 test result, or is cleared by public health, or is diagnosed with another illness.
+
+    </div>
+          <hr>
+    <div class="mx-auto" style="width: 200px;">
+    <input value="Logout" type="submit" class="btn btn-outline-primary waves-effect float-right mr-3 mb-3">
+  </div>  
+        </div>
+      </div>
+    </div>
+</form>
+  </div>
+</div>
+
+{% endblock %}

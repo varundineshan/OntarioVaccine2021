@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}  
+
+<form action="/suggestion" method="POST">
+    <div class="container mt-5">
+   
+
+        <div class="row">
+          <div class="col-md-6">
+            <!-- Card Regular -->
+            <div class="card card-cascade">
+    
+              <!-- Card content -->
+              <div class="card-body card-body-cascade ">
+    
+                <!-- Title -->
+                <h4 class="card-title"><strong>Question 7/7</strong></h4>
+                <hr>
+                <!-- Subtitle -->
+                
+                <p class="font-weight-normal">Please provide a response</p>
+                <!-- Text -->
+                <p> In the last 14 days, have you travelled outside of Canada?</p>
+              
+             
+        </div>
+              <hr>
+    
+        <div class="mx-auto" style="width: 200px;">
+        <input value="NO" type="submit" class="btn btn-primary waves-effect waves-light ml-3 mb-3 ">
+        <input value="YES" type="submit" name="emerge" class="btn btn-outline-primary waves-effect float-right mr-3 mb-3">
+      </div>
+             
+            </div>
+          </div>
+        </div>
+    </form>
+    
+      
+      </div>
+    </div>
+    
+    {% endblock %}

@@ -1,0 +1,2 @@
+create table userdb(userid varchar(25),password varchar(25),zip varchar(7),otp varchar(7));
+
